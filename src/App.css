@@ -1,0 +1,389 @@
+#root {
+  text-align: center;
+}
+body {
+  text-align: center;
+  width: 100vw;
+
+  
+  overflow-x: hidden;
+}
+.App{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: #050114; 
+  background: -webkit-linear-gradient(to right, #5d0aa0, #050114); 
+  background: linear-gradient(to right, #5d0aa0, #050114);
+  background-size: 400% 400%;
+  position: relative;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+.App-light{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  background: #edecf1; 
+  background: -webkit-linear-gradient(to right, #891ce1, #edecf1); 
+  background: linear-gradient(to right, #891ce1, #edecf1);
+  background-size: 400% 400%;
+  position: relative;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+.About{
+  width: 800px;
+  animation: slidein 1s 1s both;
+  margin-bottom: 40px;
+}
+.About p{
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.Tech, .Libraries{
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+
+.github, .linkedin{
+ transform: scale(3);
+  margin-left: 25px;
+  margin-right: 25px;
+  transition: .3s;
+  color: #fff;
+}
+.github-light, .linkedin-light{
+  transform: scale(3);
+   margin-left: 25px;
+   margin-right: 25px;
+   transition: .3s;
+   color: #000;
+ }
+ .github-light:hover{
+  transform: scale(3.5);
+  color: #fff;
+ }
+.github:hover{
+  transform: scale(3.5);
+  color: #000;
+ }
+ .linkedin:hover{
+  transform: scale(3.5);
+  color: #0077B5;
+} 
+.linkedin-light:hover{
+  transform: scale(3.5);
+  color: #0077B5;
+} 
+.Navbar{
+  display: flex;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.048);
+  margin-bottom: 40px;
+}
+.Links{
+  width: 100%;
+  flex-direction: row;
+  
+}
+.Link{
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  transition: .5s;
+  animation: slideout 1s  both;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.Link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.Link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.Link-Button{
+  flex-direction: row;
+  animation: slidein 1s .7s both;
+  margin: 20px;
+}
+.Title{
+  font-size: 2em;
+  transition: .5s;
+  animation: slideout 1s  both;
+}
+.Subtitle {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  animation: slideout 1s .3s both;
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: .5s;
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  object-fit: cover;
+}
+
+.Contact-Button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  cursor: pointer;
+  transition: .5s;
+  animation: slidein 1s 1s both;
+}
+.Contact-Button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.Contact-Button-light {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #000;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  cursor: pointer;
+  transition: .5s;
+  animation: slidein 1s 2.5s both;
+}
+.Contact-Button-light:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+:is(.Tech img, .Libraries img){
+  width: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: .5s;
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  animation: slidein 1s 2s both;
+}
+
+
+.Grid-Section {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.gif-section {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  transition: 1s;
+  animation: slidein 1s 1.6s both;
+  border: 1px solid rgba(255, 255, 255, 0.562);
+  border-radius: 10px;
+}
+
+.gif-section1:hover{
+  transform: scale(1.1);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  transition: .5s;
+  border-radius: 10px;
+}
+.img:hover{
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.Bot-Img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.Bot-Img h2{
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1px solid #fff;
+  transition: .5s;
+  cursor: pointer;
+}
+.material-icons:hover{
+  border: none;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+
+.modal{
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.732);
+  z-index: 1;
+  animation: slidein 1s .5s both;
+
+}
+.modal .material-icons{
+  margin: 0;
+  transform: scale(1);
+  padding: '10px';
+}
+.modal p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5em;
+  margin-top: 60px;
+}
+.LibrariesList{
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes slidein {
+  from {
+      transform: translateY(50%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0%);
+      opacity: 1;
+  }
+}
+@keyframes slideout {
+  0% {
+      transform: translateX(-100%) translateY(-50%) ;
+  
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0%)  translateY(0%) ;
+      
+      opacity: 1;
+  }
+}
+
+@keyframes bgentrance {
+  0% {
+      transform: translateX(-100%) translateY(-50%) ;
+  
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0%)  translateY(0%) ;
+      
+      opacity: 1;
+  }
+}
+
+
+@keyframes bouge {
+
+  from {
+    transform: translateY(0px) rotate(-7deg);
+  }
+
+  to {
+    transform: translateY(30px) rotate(-23deg);
+  }
+}
