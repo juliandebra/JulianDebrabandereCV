@@ -52,12 +52,12 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
   }));
 
-const Navbar = ({theme, setTheme}) => {
+const Navbar = ({handleClick, theme, setTheme}) => {
   return (
     <div className='Navbar'>
         <div className='Links'>
             <h1 class="Link" >ABOUT ME</h1>
-            <h1 class="Link" >PROJECTS</h1>
+            <h1 class="Link" onClick={handleClick} >PROJECTS</h1>
         </div>
         <div className='Links'>
             <a href="https://github.com/juliandebra" target="_blank" className="Link-Button">
