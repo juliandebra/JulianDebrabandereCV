@@ -5,7 +5,7 @@ import Hf from '../assets/hotelfoodgif.gif'
 import Cart from '../assets/Cartgif.gif'
 import Credit from '../assets/creditsimulator.gif'
 import GifSection from './GifSection'
-const Projects = ({aref}) => {
+const Projects = ({projectsRef}) => {
 
     const sections = [
         { 
@@ -88,8 +88,8 @@ const Projects = ({aref}) => {
     ]
 
   return (
-    <div>
-        <h1 className="Subtitle" ref={aref}>PROJECTS</h1>
+    <div ref={projectsRef}>
+        <h1 className="Subtitle" >PROJECTS</h1>
 
         <div className="Grid-Section">
             {sections.map((section, index) => <GifSection key={index} section={section}/>)}

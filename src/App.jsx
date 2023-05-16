@@ -7,26 +7,27 @@ import Projects from './Components/Projects'
 
 function App() {
 
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+  const projectsRef = useRef(null)
+  const aboutRef = useRef(null)
+  const redirectProjects = () => {
+    projectsRef.current?.scrollIntoView({behavior: 'smooth'});
   };
-  
+  const redirectAbout = () => {
+    aboutRef.current?.scrollIntoView({behavior: 'smooth'});
+  };
   const [theme, setTheme] = useState(localStorage.getItem('theme'))
   useEffect(() => {
     localStorage.setItem('theme', theme ? true : false)
   }, [theme])
 
-  useEffect(() => {
 
-  }, [])
 
   return (
     <div className={theme ? "App" : "App-light"}>
-      <Navbar handleClick={handleClick} theme={theme} setTheme={setTheme}/>
-      <About theme={theme}/>
+      <Navbar redirectAbout={redirectAbout} redirectProjects={redirectProjects} theme={theme} setTheme={setTheme}/>
+      <About  theme={theme} aboutRef={aboutRef}/>
       <Tech/>
-      <Projects theme={theme} aref={ref}/>
+      <Projects theme={theme} projectsRef={projectsRef}/>
     </div>
   )
 }

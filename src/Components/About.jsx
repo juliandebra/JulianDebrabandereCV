@@ -1,10 +1,10 @@
 import React from 'react'
 
 import ProfileImage from '../assets/ProfileImage.jpg'
-const About = ({theme}) => {
+const About = ({aboutRef, theme}) => {
   return (
-    <>
-        <h1 className="Title">JULIAN DEBRABANDERE</h1>
+    <div ref={aboutRef}>
+        <h1  className="Title">JULIAN DEBRABANDERE</h1>
         <h1 className="Subtitle">Front-End Developer</h1>
         <div className='About'>
             <img src={ProfileImage} className="photo" alt=""/>
@@ -21,7 +21,7 @@ const About = ({theme}) => {
             </a>
         </div>
         
-    </>
+    </div>
   )
 }
 

@@ -4,12 +4,10 @@
 body {
   text-align: center;
   width: 100vw;
-
-  
   overflow-x: hidden;
 }
 .App{
-  width: 100%;
+  width: 100vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -26,7 +24,7 @@ body {
   animation: Gradient 15s ease infinite;
 }
 .App-light{
-  width: 100%;
+  width: 100vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -94,6 +92,7 @@ body {
 } 
 .Navbar{
   display: flex;
+  position: fixed;
   top: 0;
   height: 80px;
   width: 100vw;
@@ -101,8 +100,35 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  background-color: rgba(255, 255, 255, 0.048);
   margin-bottom: 40px;
+  z-index: 10;
+  background: #050114; 
+  background: -webkit-linear-gradient(to right, #5d0aa0, #050114); 
+  background: linear-gradient(to right, #5d0aa0, #050114);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+.Navbar-light{
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin-bottom: 40px;
+  z-index: 10;
+  background: #edecf1; 
+  background: -webkit-linear-gradient(to right, #891ce1, #edecf1); 
+  background: linear-gradient(to right, #891ce1, #edecf1);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 .Links{
   width: 100%;
@@ -148,6 +174,7 @@ body {
   font-size: 2em;
   transition: .5s;
   animation: slideout 1s  both;
+  margin-top: 100px;
 }
 .Subtitle {
   font-size: 1.5em;
@@ -233,8 +260,6 @@ body {
 
 .gif-section {
   margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
   flex-direction: column;
   display: flex;
   justify-content: start;
@@ -326,6 +351,183 @@ body {
   grid-template-columns: auto auto;
   justify-content: space-evenly;
   text-align: left;
+}
+@media (min-width: 414px) and (max-width: 954px) {
+  .App{
+    display:flex;
+  }
+  .Title{
+    font-size: 22px;
+  }
+  .Subtitle{
+    font-size: 16px;
+  }
+  .Navbar{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Navbar-light{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .Link{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .github, .linkedin{
+    transform: scale(2.5);
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+   .github-light, .linkedin-light{
+     transform: scale(2.5);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .github-light:hover{
+     transform: scale(2.7);
+    }
+   .github:hover{
+     transform: scale(2.7);
+    }
+    .linkedin:hover{
+      transform: scale(2.7);
+    } 
+    .linkedin-light:hover{
+      transform: scale(2.7);
+    } 
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+  .About p{
+    width: 90vw;
+    font-size: 16px;
+  }
+  .Tech{
+    width: 90vw;
+  }
+  .Grid-Section{
+    display: flex;
+    width: 90vw;
+  }
+  .Tech img{
+    width: 50px;
+  }
+  .Bot-Img{
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .Bot-Img h2{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .App{
+    display:flex;
+  }
+  .Title{
+    font-size: 22px;
+  }
+  .Subtitle{
+    font-size: 16px;
+  }
+  .Navbar{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Navbar-light{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .Link{
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .github, .linkedin{
+    transform: scale(1.5);
+     margin-left: 0px;
+     margin-right: 0px;
+   }
+   .github-light, .linkedin-light{
+     transform: scale(1.5);
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .github-light:hover{
+     transform: scale(1.6);
+    }
+   .github:hover{
+     transform: scale(1.6);
+    }
+    .linkedin:hover{
+      transform: scale(1.6);
+    } 
+    .linkedin-light:hover{
+      transform: scale(1.6);
+    } 
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+  .About p{
+    width: 90vw;
+    font-size: 16px;
+  }
+  .Tech{
+    width: 90vw;
+  }
+  .Grid-Section{
+    display: flex;
+    width: 90vw;
+  }
+  .Tech img{
+    width: 50px;
+  }
+  .Bot-Img{
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .Bot-Img h2{
+    font-size: 14px;
+    margin-top: 20px;
+  }
 }
 
 @keyframes Gradient {
