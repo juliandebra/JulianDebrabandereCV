@@ -182,6 +182,7 @@ body {
   letter-spacing: 2px;
   position: relative;
   white-space: nowrap;
+  transition: .5s;
   transform: translate(-50%, -50%);
   animation: slideout 1s .3s both;
 }
