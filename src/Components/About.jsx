@@ -12,7 +12,7 @@ const About = ({aboutRef, theme}) => {
                 Hi! My name is Julian. I am a Front-End Developer with junior level. 
                 Since I started programming, I have not stopped learning. 
                 Every day, I try to improve my skills with React, JS, HTML & CSS. 
-                At the same time, I am studying the basics with NodeJS, SQL and Python, 
+                At the same time, I am studying the basics with Motoko and Python, 
                 to start integrating the back-end to my projects. 
                 If you want to know more about my profile, please contact me.
             </p>
