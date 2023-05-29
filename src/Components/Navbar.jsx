@@ -62,8 +62,8 @@ const Navbar = ({redirectAbout, redirectProjects, theme, setTheme}) => {
   return (
     <div className={theme ? 'Navbar': 'Navbar-light'}>
         <div className='Links'>
-            <h1 class="Link" onClick={redirectAbout} >ABOUT ME</h1>
-            <h1 class="Link" onClick={redirectProjects} >PROJECTS</h1>
+            <h1 class={theme ? "Link": "Link-light"} onClick={redirectAbout} >ABOUT ME</h1>
+            <h1 class={theme ? "Link": "Link-light"} onClick={redirectProjects} >PROJECTS</h1>
         </div>
         <div className='Links'>
             <a  href="https://github.com/juliandebra" target="_blank" className="Link-Button">

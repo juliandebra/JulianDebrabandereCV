@@ -16,17 +16,17 @@ const Tech = () => {
     <>
         <h1 className='Subtitle'>Technologies</h1>
         <div className="Tech">
-            <img src={Html} alt="html" className="html"/>
-            <img src={Css} alt="css" className="css"/>
-            <img src={Js} alt="js" className="js"/>
-            <img src={ReactLogo} alt="react" className="react"/>
-            <img src={Fb} alt="firebase" className="firebase"/>
-            <img src={Py} alt="python" className="python"/>
-            <img src={Sql} alt="sql" className="sql"/>
-            <img src={Node} alt="node" className="node"/>
-            <img src={C} alt="c" className="c"/>
-            <img src={Jira} alt="jira" className="jira"/>
-            <img src={Motoko} alt="motoko" className="motoko"/>
+            <img src={ReactLogo} alt="react" className="react" title='React'/>
+            <img src={Html} alt="html" className="html" title='HTML'/>
+            <img src={Css} alt="css" className="css" title='CSS'/>
+            <img src={Js} alt="js" className="js" title='Javascript'/>
+            <img src={Fb} alt="firebase" className="firebase" title='Firebase'/>
+            <img src={Py} alt="python" className="python" title='Python'/>
+            <img src={Sql} alt="sql" className="sql" title='SQL'/>
+            <img src={Node} alt="node" className="node" title='Node.js'/>
+            <img src={C} alt="c" className="c" title='C'/>
+            <img src={Jira} alt="jira" className="jira" title='Jira'/>
+            <img src={Motoko} alt="motoko" className="motoko" title='Motoko'/>
         </div>
     </>
   )

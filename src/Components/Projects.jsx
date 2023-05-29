@@ -4,11 +4,29 @@ import Somos from '../assets/Somos Mas - ONG.gif'
 import Hf from '../assets/hotelfoodgif.gif'
 import Cart from '../assets/Cartgif.gif'
 import Credit from '../assets/creditsimulator.gif'
+import Nular from '../assets/nulargif.gif'
 import GifSection from './GifSection'
-const Projects = ({projectsRef}) => {
+const Projects = ({projectsRef, theme}) => {
 
     const sections = [
+        {
+            href: "https://clientes.nular.co/",
+            img: Nular,
+            h2: 'Nular',
+            p: "Testing Platform for UX/UI designers where you can create quizzes and have a feedback about the app you are testing",
+            libraries: [
+                'Firebase',
+                'Redux',
+                'Chakra UI',
+                'Sweet Alert 2',
+                'React-router-dom',
+                'React-select',
+                'Styled Components',
+                'd3 Cloud'
+            ],
+        },
         { 
+            
             href: "https://johnnycashvinilos.com", 
             img: JcGif,
             h2: 'Johnny Cash Vinilos',
@@ -84,6 +102,7 @@ const Projects = ({projectsRef}) => {
             ],
             github: "https://github.com/juliandebra/creditsimulator"
         },
+        
 
     ]
 
@@ -92,7 +111,7 @@ const Projects = ({projectsRef}) => {
         <h1 className="Subtitle" >PROJECTS</h1>
 
         <div className="Grid-Section">
-            {sections.map((section, index) => <GifSection key={index} section={section}/>)}
+            {sections.map((section, index) => <GifSection key={index} section={section} theme={theme}/>)}
         </div>
     </div>
   )

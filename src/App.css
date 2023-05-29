@@ -135,7 +135,7 @@ body {
   flex-direction: row;
   
 }
-.Link{
+.Link, .Link-light{
   display: inline-block;
   position: relative;
   font-size: 1.2em;
@@ -161,7 +161,19 @@ body {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.Link:hover:after {
+.Link-light:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.Link:hover:after, .Link-light:hover:after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -317,6 +329,21 @@ body {
   border: none;
   background-color: #fff;
   color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+.material-icons-light {
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1px solid #000;
+  transition: .5s;
+  cursor: pointer;
+}
+.material-icons-light:hover{
+  border: none;
+  background-color: #000;
+  color: #fff;
   transform: scale(1.2);
 }
 
