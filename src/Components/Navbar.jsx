@@ -75,7 +75,7 @@ const Navbar = ({redirectAbout, redirectProjects, theme, setTheme}) => {
         </div>
         <div className='Links'>
             <FormControlLabel style={{margin: 0}}
-               onClick={() => setTheme(!theme)} control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+               onClick={() => setTheme(!theme)} control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked={theme} />}
             />
         </div>
     </div>

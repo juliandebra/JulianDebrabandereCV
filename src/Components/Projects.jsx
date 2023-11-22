@@ -6,9 +6,25 @@ import Cart from '../assets/Cartgif.gif'
 import Credit from '../assets/creditsimulator.gif'
 import Nular from '../assets/nulargif.gif'
 import GifSection from './GifSection'
+import MyNotes from '../assets/myNotes.gif'
+
 const Projects = ({projectsRef, theme}) => {
 
     const sections = [
+        {
+            href: 'https://ensolvers-front-yi4a.vercel.app/',
+            img: MyNotes,
+            h2: 'myNotes App',
+            p: 'Notes maker. Frontend with React. Backend with Node and express. DB with PostgreSQL. (Please, have patience to start using the app, because server takes a few seconds to start)',
+            libraries: [
+                'Axios',
+                'Postgresql',
+                'React-router-dom',
+                'Sweet Alert 2',
+                'Sequelize',
+            ],
+            github: 'https://github.com/juliandebra/ensolvers-front'
+        },
         {
             href: "https://clientes.nular.co/",
             img: Nular,
@@ -43,7 +59,8 @@ const Projects = ({projectsRef, theme}) => {
                 'Styled Components',
                 'Sweet Alert 2',
                 'Font Awesome'
-            ]
+            ],
+            
         },
         { 
             href: "https://ongsomos-mas.vercel.app/", 

@@ -15,9 +15,10 @@ function App() {
   const redirectAbout = () => {
     aboutRef.current?.scrollIntoView({behavior: 'smooth'});
   };
-  const [theme, setTheme] = useState(localStorage.getItem('theme'))
+  const localTheme = localStorage.getItem('theme') === 'false' ? false : true
+  const [theme, setTheme] = useState(localTheme)
   useEffect(() => {
-    localStorage.setItem('theme', theme ? true : false)
+    localStorage.setItem('theme', JSON.stringify(theme))
   }, [theme])
 
 

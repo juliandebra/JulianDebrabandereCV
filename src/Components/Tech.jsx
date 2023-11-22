@@ -10,6 +10,8 @@ import Node from "../assets/node.png"
 import C from "../assets/c.png"
 import Jira from "../assets/jira.png"
 import Motoko from "../assets/Motoko.jpg"
+import PgLogo from '../assets/pg-logo.svg'
+import seqLogo from '../assets/sequelize-logo.svg'
 
 const Tech = () => {
   return (
@@ -26,6 +28,8 @@ const Tech = () => {
             <img src={Node} alt="node" className="node" title='Node.js'/>
             <img src={C} alt="c" className="c" title='C'/>
             <img src={Jira} alt="jira" className="jira" title='Jira'/>
+            <img src={PgLogo} alt="postgreSQL" className="pg" title='PostgreSQL'/>
+            <img src={seqLogo} alt="sequelize" className="sequelize" title='Sequelize'/>
             <img src={Motoko} alt="motoko" className="motoko" title='Motoko'/>
         </div>
     </>
