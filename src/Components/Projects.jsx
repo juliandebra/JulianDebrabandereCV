@@ -43,7 +43,7 @@ const Projects = ({projectsRef, theme}) => {
         },
         { 
             
-            href: "https://johnnycashvinilos.com", 
+            href: "https://jc-front.vercel.app/", 
             img: JcGif,
             h2: 'Johnny Cash Vinilos',
             p: " E-commerce. Frontend with React, DB with Firebase and Backend with Node.js /n Libraries used:",
