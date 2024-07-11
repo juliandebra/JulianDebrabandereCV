@@ -1,28 +1,31 @@
-import React from 'react'
+import React from "react";
 
-import ProfileImage from '../assets/ProfileImage.jpg'
-const About = ({aboutRef, theme}) => {
+import ProfileImage from "../assets/ProfileImage.jpg";
+const About = ({ aboutRef, theme }) => {
   return (
     <div ref={aboutRef}>
-        <h1  className="Title">JULIAN DEBRABANDERE</h1>
-        <h1 className="Subtitle">Front-End Developer</h1>
-        <div className='About'>
-            <img src={ProfileImage} className="photo" alt=""/>
-            <p>
-                Hi! My name is Julian. I am a Front-End Developer with junior level. 
-                Since I started programming, I have not stopped learning. 
-                Every day, I try to improve my skills with React, JS, HTML & CSS. 
-                At the same time, I am studying the basics with Motoko and Python, 
-                to start integrating the back-end to my projects. 
-                If you want to know more about my profile, please contact me.
-            </p>
-            <a href="mailto:julian.debra25@gmail.com" style={{textDecoration:"none"}} target="_blank">
-                <button className={theme ? "Contact-Button" : "Contact-Button-light" }>Contact Me</button>
-            </a>
-        </div>
-        
+      <h1 className="Title">JULIAN DEBRABANDERE</h1>
+      <h1 className="Subtitle">Full Stack Developer</h1>
+      <div className="About">
+        <img src={ProfileImage} className="photo" alt="" />
+        <p>
+          Hi! My name is Julian and I am a Full Stack Developer. Every day, I
+          try to improve my skills with React, TS, Node and SQL. At the same
+          time, I work as a Frontend Teacher at an Ed-tech. If you want to know
+          more about my profile, please contact me.
+        </p>
+        <a
+          href="mailto:julian.debra25@gmail.com"
+          style={{ textDecoration: "none" }}
+          target="_blank"
+        >
+          <button className={theme ? "Contact-Button" : "Contact-Button-light"}>
+            Contact Me
+          </button>
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
