@@ -6,7 +6,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-.App{
+.App {
   width: 100vw;
   margin: auto;
   display: flex;
@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  background: #050114; 
-  background: -webkit-linear-gradient(to right, #5d0aa0, #050114); 
+  background: #050114;
+  background: -webkit-linear-gradient(to right, #5d0aa0, #050114);
   background: linear-gradient(to right, #5d0aa0, #050114);
   background-size: 400% 400%;
   position: relative;
@@ -23,7 +23,7 @@ body {
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
 }
-.App-light{
+.App-light {
   width: 100vw;
   margin: auto;
   display: flex;
@@ -31,8 +31,8 @@ body {
   flex-direction: column;
   align-items: center;
   color: #000;
-  background: #edecf1; 
-  background: -webkit-linear-gradient(to right, #891ce1, #edecf1); 
+  background: #edecf1;
+  background: -webkit-linear-gradient(to right, #891ce1, #edecf1);
   background: linear-gradient(to right, #891ce1, #edecf1);
   background-size: 400% 400%;
   position: relative;
@@ -40,16 +40,17 @@ body {
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
 }
-.About{
+.About {
   width: 800px;
   animation: slidein 1s 1s both;
   margin-bottom: 40px;
 }
-.About p{
+.About p {
   margin-bottom: 30px;
   font-size: 20px;
 }
-.Tech, .Libraries{
+.Tech,
+.Libraries {
   width: 800px;
   display: flex;
   flex-direction: row;
@@ -59,38 +60,39 @@ body {
   margin-bottom: 40px;
 }
 
-
-.github, .linkedin{
- transform: scale(3);
+.github,
+.linkedin {
+  transform: scale(3);
   margin-left: 25px;
   margin-right: 25px;
-  transition: .3s;
+  transition: 0.3s;
   color: #fff;
 }
-.github-light, .linkedin-light{
+.github-light,
+.linkedin-light {
   transform: scale(3);
-   margin-left: 25px;
-   margin-right: 25px;
-   transition: .3s;
-   color: #000;
- }
- .github-light:hover{
+  margin-left: 25px;
+  margin-right: 25px;
+  transition: 0.3s;
+  color: #000;
+}
+.github-light:hover {
   transform: scale(3.5);
   color: #fff;
- }
-.github:hover{
+}
+.github:hover {
   transform: scale(3.5);
   color: #000;
- }
- .linkedin:hover{
+}
+.linkedin:hover {
   transform: scale(3.5);
-  color: #0077B5;
-} 
-.linkedin-light:hover{
+  color: #0077b5;
+}
+.linkedin-light:hover {
   transform: scale(3.5);
-  color: #0077B5;
-} 
-.Navbar{
+  color: #0077b5;
+}
+.Navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -99,18 +101,18 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
   z-index: 10;
-  background: #050114; 
-  background: -webkit-linear-gradient(to right, #5d0aa0, #050114); 
+  background: #050114;
+  background: -webkit-linear-gradient(to right, #5d0aa0, #050114);
   background: linear-gradient(to right, #5d0aa0, #050114);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
 }
-.Navbar-light{
+.Navbar-light {
   display: flex;
   position: fixed;
   top: 0;
@@ -119,23 +121,23 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
   z-index: 10;
-  background: #edecf1; 
-  background: -webkit-linear-gradient(to right, #891ce1, #edecf1); 
+  background: #edecf1;
+  background: -webkit-linear-gradient(to right, #891ce1, #edecf1);
   background: linear-gradient(to right, #891ce1, #edecf1);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
 }
-.Links{
+.Links {
   width: 100%;
   flex-direction: row;
-  
 }
-.Link, .Link-light{
+.Link,
+.Link-light {
   display: inline-block;
   position: relative;
   font-size: 1.2em;
@@ -144,8 +146,8 @@ body {
   position: relative;
   margin-bottom: 20px;
   white-space: nowrap;
-  transition: .5s;
-  animation: slideout 1s  both;
+  transition: 0.5s;
+  animation: slideout 1s both;
   cursor: pointer;
   margin-left: 40px;
 }
@@ -173,19 +175,20 @@ body {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.Link:hover:after, .Link-light:hover:after{
+.Link:hover:after,
+.Link-light:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.Link-Button{
+.Link-Button {
   flex-direction: row;
-  animation: slidein 1s .7s both;
+  animation: slidein 1s 0.7s both;
   margin: 20px;
 }
-.Title{
+.Title {
   font-size: 2em;
-  transition: .5s;
-  animation: slideout 1s  both;
+  transition: 0.5s;
+  animation: slideout 1s both;
   margin-top: 100px;
 }
 .Subtitle {
@@ -194,18 +197,18 @@ body {
   letter-spacing: 2px;
   position: relative;
   white-space: nowrap;
-  transition: .5s;
+  transition: 0.5s;
   transform: translate(-50%, -50%);
-  animation: slideout 1s .3s both;
+  animation: slideout 1s 0.3s both;
 }
 
-.photo{
+.photo {
   width: 200px;
   height: 200px;
   margin: 20px;
   border-radius: 50%;
-  transition: .5s;
-  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  transition: 0.5s;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
   object-fit: cover;
 }
 
@@ -219,7 +222,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 15px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   animation: slidein 1s 1s both;
 }
 .Contact-Button:hover {
@@ -236,7 +239,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 15px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   animation: slidein 1s 2.5s both;
 }
 .Contact-Button-light:hover {
@@ -244,19 +247,20 @@ body {
   color: #fff;
 }
 
-
-
-:is(.Tech img, .Libraries img){
+:is(.Tech img, .Libraries img) {
   width: 70px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  transition: .5s;
-  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  transition: 0.5s;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
   animation: slidein 1s 2s both;
 }
 
+.App .next {
+  filter: invert(1) drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
 
 .Grid-Section {
   width: 700px;
@@ -283,7 +287,7 @@ body {
   border-radius: 10px;
 }
 
-.gif-section1:hover{
+.gif-section1:hover {
   transform: scale(1.1);
 }
 
@@ -294,12 +298,12 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 10px;
 }
-.img:hover{
+.img:hover {
   transform: scale(1.01);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .Bot-Img {
@@ -310,7 +314,7 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-.Bot-Img h2{
+.Bot-Img h2 {
   margin-left: 20px;
   margin-bottom: 30px;
   width: 80%;
@@ -321,12 +325,12 @@ body {
   color: #fff;
   padding: 5px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.material-icons:hover{
+.material-icons:hover {
   border: none;
   background-color: #fff;
   color: rgb(0, 0, 0);
@@ -336,19 +340,19 @@ body {
   color: #000;
   padding: 5px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid #000;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.material-icons-light:hover{
+.material-icons-light:hover {
   border: none;
   background-color: #000;
   color: #fff;
   transform: scale(1.2);
 }
 
-.modal{
+.modal {
   color: #fff;
   justify-content: center;
   align-items: center;
@@ -360,21 +364,20 @@ body {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.732);
   z-index: 1;
-  animation: slidein 1s .5s both;
-
+  animation: slidein 1s 0.5s both;
 }
-.modal .material-icons{
+.modal .material-icons {
   margin: 0;
   transform: scale(1);
   padding: '10px';
 }
-.modal p{
+.modal p {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1.5em;
   margin-top: 60px;
 }
-.LibrariesList{
+.LibrariesList {
   font-size: 1.2em;
   display: grid;
   grid-template-columns: auto auto;
@@ -382,63 +385,65 @@ body {
   text-align: left;
 }
 @media (min-width: 414px) and (max-width: 954px) {
-  .App{
-    display:flex;
+  .App {
+    display: flex;
   }
-  .Title{
+  .Title {
     font-size: 22px;
   }
-  .Subtitle{
+  .Subtitle {
     font-size: 16px;
   }
-  .Navbar{
+  .Navbar {
     width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  .Navbar-light{
+  .Navbar-light {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  .Links{
+  .Links {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
   }
-  .Link{
+  .Link {
     font-size: 15px;
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 0px;
   }
-  .github, .linkedin{
+  .github,
+  .linkedin {
     transform: scale(2.5);
-     margin-left: 10px;
-     margin-right: 10px;
-   }
-   .github-light, .linkedin-light{
-     transform: scale(2.5);
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .github-light:hover{
-     transform: scale(2.7);
-    }
-   .github:hover{
-     transform: scale(2.7);
-    }
-    .linkedin:hover{
-      transform: scale(2.7);
-    } 
-    .linkedin-light:hover{
-      transform: scale(2.7);
-    } 
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .github-light,
+  .linkedin-light {
+    transform: scale(2.5);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .github-light:hover {
+    transform: scale(2.7);
+  }
+  .github:hover {
+    transform: scale(2.7);
+  }
+  .linkedin:hover {
+    transform: scale(2.7);
+  }
+  .linkedin-light:hover {
+    transform: scale(2.7);
+  }
   .About {
     display: flex;
     flex-direction: column;
@@ -446,88 +451,90 @@ body {
     justify-content: center;
     width: 90vw;
   }
-  .About p{
+  .About p {
     width: 90vw;
     font-size: 16px;
   }
-  .Tech{
+  .Tech {
     width: 90vw;
   }
-  .Grid-Section{
+  .Grid-Section {
     display: flex;
     width: 90vw;
   }
-  .Tech img{
+  .Tech img {
     width: 50px;
   }
-  .Bot-Img{
+  .Bot-Img {
     height: 40px;
     margin-bottom: 10px;
   }
-  .Bot-Img h2{
+  .Bot-Img h2 {
     font-size: 18px;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 414px) {
-  .App{
-    display:flex;
+  .App {
+    display: flex;
   }
-  .Title{
+  .Title {
     font-size: 22px;
   }
-  .Subtitle{
+  .Subtitle {
     font-size: 16px;
   }
-  .Navbar{
+  .Navbar {
     width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  .Navbar-light{
+  .Navbar-light {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  .Links{
+  .Links {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
   }
-  .Link{
+  .Link {
     font-size: 10px;
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 0px;
   }
-  .github, .linkedin{
+  .github,
+  .linkedin {
     transform: scale(1.5);
-     margin-left: 0px;
-     margin-right: 0px;
-   }
-   .github-light, .linkedin-light{
-     transform: scale(1.5);
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    .github-light:hover{
-     transform: scale(1.6);
-    }
-   .github:hover{
-     transform: scale(1.6);
-    }
-    .linkedin:hover{
-      transform: scale(1.6);
-    } 
-    .linkedin-light:hover{
-      transform: scale(1.6);
-    } 
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .github-light,
+  .linkedin-light {
+    transform: scale(1.5);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .github-light:hover {
+    transform: scale(1.6);
+  }
+  .github:hover {
+    transform: scale(1.6);
+  }
+  .linkedin:hover {
+    transform: scale(1.6);
+  }
+  .linkedin-light:hover {
+    transform: scale(1.6);
+  }
   .About {
     display: flex;
     flex-direction: column;
@@ -535,25 +542,25 @@ body {
     justify-content: center;
     width: 90vw;
   }
-  .About p{
+  .About p {
     width: 90vw;
     font-size: 16px;
   }
-  .Tech{
+  .Tech {
     width: 90vw;
   }
-  .Grid-Section{
+  .Grid-Section {
     display: flex;
     width: 90vw;
   }
-  .Tech img{
+  .Tech img {
     width: 50px;
   }
-  .Bot-Img{
+  .Bot-Img {
     height: 40px;
     margin-bottom: 10px;
   }
-  .Bot-Img h2{
+  .Bot-Img h2 {
     font-size: 14px;
     margin-top: 20px;
   }
@@ -561,55 +568,53 @@ body {
 
 @keyframes Gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 @keyframes slidein {
   from {
-      transform: translateY(50%);
-      opacity: 0;
+    transform: translateY(50%);
+    opacity: 0;
   }
   to {
-      transform: translateY(0%);
-      opacity: 1;
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 @keyframes slideout {
   0% {
-      transform: translateX(-100%) translateY(-50%) ;
-  
-      opacity: 0;
+    transform: translateX(-100%) translateY(-50%);
+
+    opacity: 0;
   }
   100% {
-      transform: translateX(0%)  translateY(0%) ;
-      
-      opacity: 1;
+    transform: translateX(0%) translateY(0%);
+
+    opacity: 1;
   }
 }
 
 @keyframes bgentrance {
   0% {
-      transform: translateX(-100%) translateY(-50%) ;
-  
-      opacity: 0;
+    transform: translateX(-100%) translateY(-50%);
+
+    opacity: 0;
   }
   100% {
-      transform: translateX(0%)  translateY(0%) ;
-      
-      opacity: 1;
+    transform: translateX(0%) translateY(0%);
+
+    opacity: 1;
   }
 }
 
-
 @keyframes bouge {
-
   from {
     transform: translateY(0px) rotate(-7deg);
   }
